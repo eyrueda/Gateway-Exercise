@@ -1,7 +1,6 @@
 # Solution for Gateway project using Spring boot framework and H2 in memory Database.
 
 ### Conditions
-Software Requirements
 Programming language: Java
 Framework: Spring Boot
 Database: MySQL or in-memory
