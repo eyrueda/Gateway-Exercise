@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "1a39a906-71ff-46d7-a0ba-606843367632",
+		"name": "Gateway Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new Gateway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"gateway1\",\r\n\t\"ip\": \"1.1.1.1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/gateway",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"gateway"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/gateway",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"gateway"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Gateway by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/gateway/{{gateway_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"gateway",
+						"{{gateway_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Gateway",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"gateway1\",\r\n\t\"ip\": \"11.11.11.11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/gateway/{{gateway_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"gateway",
+						"{{gateway_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Gateway",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/gateway/{{gateway_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"gateway",
+						"{{gateway_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Peripheral to Gateway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"vendor\":\"vendor1\",\n\t\"createdAt\":\"2020-11-14\",\n\t\"status\":\"online\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/api/peripheral/{{gateway_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"peripheral",
+						"{{gateway_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Peripheral for a Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/peripheral/{{gateway_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"peripheral",
+						"{{gateway_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Peripheral for a Gateway",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/peripheral/get/{{gateway_id}}/peripheral/{{peripheral_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"peripheral",
+						"get",
+						"{{gateway_id}}",
+						"peripheral",
+						"{{peripheral_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Specific Peripheral for a Gateway",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/api/peripheral/delete/{{gateway_id}}/peripheral/{{peripheral_id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"peripheral",
+						"delete",
+						"{{gateway_id}}",
+						"peripheral",
+						"{{peripheral_id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
