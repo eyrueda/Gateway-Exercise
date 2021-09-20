@@ -1,10 +1,10 @@
 # Solution for Gateway project using Spring boot framework and H2 in memory Database.
 
 ### Conditions
-Programming language: Java
-Framework: Spring Boot
-Database: MySQL or in-memory
-Automated build: Apache Maven
+Programming language: Java.
+Framework: Spring Boot.
+Database: MySQL or in-memory.
+Automated build: Apache Maven.
 
 ### Description
 This sample project is managing gateways - master devices that control multiple peripheral devices.
