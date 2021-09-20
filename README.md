@@ -1,6 +1,6 @@
 # Solution for Gateway project using Spring boot framework and H2 in memory Database.
 
-###Conditions
+### Conditions
 
 You have to prepare a solution to the proposed problem in the defined period of time. The solution must comply with the requirements. For anything not explicitly listed, you are free to choose whatever technology/library/tool you feel comfortable with.
 
@@ -12,7 +12,7 @@ Framework: Spring Boot
 Database: MySQL or in-memory
 Automated build: Apache Maven
 
-###Description
+### Description
 
 This sample project is managing gateways - master devices that control multiple peripheral devices.
 Your task is to create a REST service (JSON/HTTP) for storing information about these gateways and their associated devices. This information must be stored in the database.
@@ -30,13 +30,13 @@ Each peripheral device has:
 • date created,
 • status - online/offline.
 
-###Other considerations
+### Other considerations
 
 No User Interface is necessary for the solution.
 Provide an automated build.
 Provide basic unit tests (if you have time).
 
-##Solution:
+## Solution:
 
 https://github.com/eyrueda/Gateway-Exercise/blob/main/Solution%20for%20Gateway%20project.pdf
 
