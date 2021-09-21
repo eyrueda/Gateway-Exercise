@@ -99,4 +99,10 @@ public class GatewayController {
         }
     }
 
+    @GetMapping("")
+    public String testAPI(){
+        return "Welcome to Gateway API !!!!!";
+    }
+
+
 }
